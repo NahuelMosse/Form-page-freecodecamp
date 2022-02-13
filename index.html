@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Register banco Noble</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">Registrate en Banco Noble</h1>
+            <p id="description">El banco mas noble del mundo</p>
+        </header>
+        <form id="survey-form" action="">
+
+            <!--Nombre-->
+            <label id="name-label" for="name">Nombre</label>
+            <input id="name" type="text" name="name" placeholder="Tu nombre" required>
+
+            <!--Apellido-->
+            <label for="lastname">Apellido</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Tu apellido" required>
+
+            <!--Edad-->
+            <label for="age">Edad</label>
+            <input id="age" type="number" name="age" placeholder="Tu edad" required>
+
+            <!--Email-->
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Tu email" required>
+
+            <!--Dni-->
+            <label for="dni">n° dni</label>
+            <input id="dni" type="text" name="dni" placeholder="Tu dni" required>
+
+            <!--Numero favorito-->
+            <label id="number-label" for="number">Numero favorito del 1 al 10</label>
+            <input id="number" type="number" name="number" min="1" max="10" placeholder="Tu numero">
+
+            <!--Trabajo-->
+            <label for="trabajo">Cual es tu relacion de dependencia</label>
+            <select id="dropdown" name="trabajo" required>
+                <option disabled selected value>Selecciona una opcion</option>
+                <option value="no">No trabajo</option>
+                <option value="trabajo dependencia">Bajo dependencia</option>
+                <option value="autonomo">Autonomo</option>
+            </select>
+
+            <!--Sueldo-->
+            <div id="radio">
+                <label id="remuneration" for="remuneration">Sueldo</label>
+                <div id="remuneration-1-container">
+                    <input id="remuneration-1" type="radio" name="remuneration" value="USD 500 o menos">
+                    <label for="remuneration-1"> USD 500 o menos</label>
+                </div><!-- Remuneration-1-container -->
+                <div id="remuneration-2-container">
+                    <input id="remuneration-2" type="radio" name="remuneration" value="USD 500 a USD 1000">
+                    <label for="remuneration-2"> USD 500 a USD 1000</label>
+                </div><!-- Remuneration-2-container -->
+                <div id="remuneration-3-container">
+                    <input id="remuneration-3" type="radio" name="remuneration" value="USD 1000 o mas">
+                    <label for="remuneration-3"> USD 1000 o mas</label>
+                </div><!-- Remuneration-3-container -->
+            </div><!-- #Radio -->
+
+            <!--Sugerencias-->
+            <label for="suggestions">Sugerencias</label>
+            <textarea id="suggestions" name="suggestions" placeholder="Mandanos una sugerencia"></textarea>
+
+            <!--Terminos-->
+            <div id="checkbox">
+                <div id="terms-1-container">
+                    <input id="terms-1" type="checkbox" name="terms" value="yes-1">
+                    <label for="terms-1">Acepta todos nuestros terminos y servicios</label>
+                </div><!-- Terms-1-container -->
+                <div id="terms-2-container">
+                    <input id="terms-2" type="checkbox" name="terms" value="yes-2">
+                    <label for="terms-2">Acepta que pagara comisiones por transaccion</label>
+                </div><!-- Terms-2-container -->
+            </div><!-- Checkbox -->
+
+            <!--Enviar-->
+            <button id="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
